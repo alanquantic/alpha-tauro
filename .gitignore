@@ -1,0 +1,12 @@
+# Dependencias
+node_modules
+.next
+out
+dist
+
+# Secretos y llaves
+.env
+.env*.local
+
+# Archivos del sistema
+.DS_Store
