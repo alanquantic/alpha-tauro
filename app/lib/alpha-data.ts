@@ -1,5 +1,5 @@
 export const brochureUrl =
-  "https://alpha-tauro.com/wp-content/uploads/2024/08/Brochure-Alpha-Tauro-espanol-1.pdf";
+  "/brochures/Brochure-Alpha-Tauro-espanol-1.pdf";
 
 export const assets = {
   logo: "https://alpha-tauro.com/wp-content/uploads/2024/08/cropped-ALPHA-TAURO_Mesa-de-trabajo-1-copia.png",

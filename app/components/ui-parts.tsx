@@ -24,7 +24,7 @@ export function ButtonLink({
   return (
     <Link
       href={href}
-      className={`shine-button inline-flex items-center gap-3 px-5 py-3 text-[11px] font-black uppercase tracking-[0.08em] transition ${
+      className={`shine-button inline-flex min-h-11 items-center justify-center gap-3 px-5 py-3 text-center text-[11px] font-black uppercase tracking-[0.08em] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-alpha ${
         dark
           ? "bg-zinc-900 text-white hover:bg-alpha hover:text-black"
           : "bg-alpha text-black hover:bg-white"
@@ -48,7 +48,7 @@ export function ExternalButton({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="shine-button inline-flex items-center gap-3 bg-alpha px-5 py-3 text-[11px] font-black uppercase tracking-[0.08em] text-black transition hover:bg-white"
+      className="shine-button inline-flex min-h-11 items-center justify-center gap-3 bg-alpha px-5 py-3 text-center text-[11px] font-black uppercase tracking-[0.08em] text-black transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-alpha"
     >
       {children}
       <ArrowIcon />
