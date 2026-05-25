@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactForm } from "./contact-form";
 import { brochureUrl, contact, type Product } from "../lib/alpha-data";
 
 export function ArrowIcon() {
@@ -118,28 +119,7 @@ export function ContactPanel({ compact = false }: { compact?: boolean }) {
           </div>
         </aside>
 
-        <form className="p-8 sm:p-12">
-          <p className="text-[11px] font-black uppercase tracking-[0.12em] text-zinc-500">
-            Escríbenos
-          </p>
-          <h2 className="mt-2 text-3xl font-black text-[#192036] sm:text-4xl">
-            Si tienes una duda
-          </h2>
-
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <input className="field" placeholder="Nombre" type="text" />
-            <input className="field" placeholder="Teléfono" type="tel" />
-            <input className="field" placeholder="Correo electrónico" type="email" />
-            <input className="field" placeholder="Empresa" type="text" />
-          </div>
-          <textarea className="field mt-4 min-h-28 resize-none" placeholder="Mensaje" />
-          <button
-            type="submit"
-            className="shine-button mx-auto mt-8 block bg-alpha px-8 py-3 text-[11px] font-black uppercase tracking-[0.1em] text-white transition hover:bg-black"
-          >
-            Enviar
-          </button>
-        </form>
+        <ContactForm />
       </div>
     </section>
   );
